@@ -9,7 +9,7 @@ github:
   default_branch: main
 
 baseurl: /scinet-geospatial-site
-url: "https://moerichert-usda.github.io"
+url: "https://usda-scinet.github.io"
 
 # Configure a separator for post excerpts
 excerpt_separator: "<!--end-excerpt-->"
