@@ -92,7 +92,7 @@ Steps to prepare for the tutorial:
 
     ```bash
     cd /90daydata/shared/firstname.lastname
-    cp -r /project/geospatialworkshop/session6/
+    cp -r /project/geospatialworkshop/session6/ .
     ```
 
     If you have not created your workshop folder yet, run these commands instead, replacing *firstname.lastname* with your actual name:
@@ -101,7 +101,7 @@ Steps to prepare for the tutorial:
     cd /90daydata/shared
     mkdir firstname.lastname
     cd firstname.lastname
-    cp -r /project/geospatialworkshop/session6/ 
+    cp -r /project/geospatialworkshop/session6/ .
     ```
 
 3. **Launch an RStudio session.** Choose the following values from the menu:
