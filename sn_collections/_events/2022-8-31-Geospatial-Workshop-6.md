@@ -87,15 +87,15 @@ The workshop-specific instructions are kept below.
 
 Steps to prepare for the tutorial:
 
-1. **Login to Ceres Open OnDemand** at [https://ceres-ood.scinet.usda.gov](https://ceres-ood.scinet.usda.gov). Your username is typically *firstname.lastname*. For the password, enter your SCINet account password followed by the 6-digit verification code, e.g. from a Google Authenticator app on your phone, with no spaces. Do not add a '+' between your password and code. 
+1. **Login to Atlas Open OnDemand** at [atlas-ood.hpc.msstate.edu/](atlas-ood.hpc.msstate.edu/). Your username is typically *firstname.lastname*. For the password, enter your SCINet account password followed by the 6-digit verification code, e.g. from a Google Authenticator app on your phone, with no spaces. Do not add a '+' between your password and code. 
 
-2. **Copy the Session 6 material from the workshop project space to your temporary workshop folder.** To get to a shell to do so, you can use the *Clusters* tab at the top of your Open OnDemand page to select 'Ceres Shell Access' (if prompted for a password, enter your SCINet account password without the verification code). If you are comfortable ssh-ing in instead from terminal or powershell, feel free to do so.
+2. **Copy the Session 6 material from the workshop project space to your temporary workshop folder.** To get to a shell to do so, you can use the *Clusters* tab at the top of your Open OnDemand page to select 'Atlas Shell Access' (if prompted for a password, enter your SCINet account password without the verification code). If you are comfortable ssh-ing in instead from terminal or powershell, feel free to do so.
 
     If you have already made your workshop folder in previous sessions, you will only need to run the following commands, replacing *firstname.lastname* with your actual name: 
 
     ```bash
     cd /90daydata/shared/firstname.lastname
-    cp -r /project/geospatialworkshop/session6/
+    cp -r /project/geospatialworkshop/session6/ .
     ```
 
     If you have not created your workshop folder yet, run these commands instead, replacing *firstname.lastname* with your actual name:
@@ -104,16 +104,17 @@ Steps to prepare for the tutorial:
     cd /90daydata/shared
     mkdir firstname.lastname
     cd firstname.lastname
-    cp -r /project/geospatialworkshop/session6/ 
+    cp -r /project/geospatialworkshop/session6/ .
     ```
 
-3. **Launch a RStudio session.** Choose the following values from the menu:
+3. **Launch an RStudio session.** Choose the following values from the menu:
 
     * Account: geospatialworkshop
-    * Slurm Partition: workshop
-    * R version: 4.2
+    * Slurm Partition: atlas
+    * QOS: normal
+    * R version: 4.1
     * Number of hours: 3
-    * Number of cores: 16
+    * Number of tasks: 16
     * Memory required: 64G
   
     Click *Launch*.
@@ -123,9 +124,4 @@ Steps to prepare for the tutorial:
     ```bash
     cd /90daydata/shared/firstname.lastname/session6
     ```
-
-
-
-
-
 <br>
